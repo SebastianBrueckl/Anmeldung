@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brückls Page</title>
+    <style>
+        #result {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+        }
+        input{
+            width: 10pc;
+            height: 5pc;
+            border-radius: 1pc;
+        }
+        button{
+            width: 5pc;
+            height: 5pc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Guten Tag, dieses Dokument ist auf 1868p90 geschützt.<br>Das öffnen dieses Dokument ist nur für Familienangehörige gestattet!<br>
+    Wenn dieses Dokument nicht inerhalb von 2 Stunden geschlossen wird, wird die IP Adresse kopiert und an den Ersteller dieser Seite weitergeleitet.</h1>
+    <input type="password" id="passwordField" placeholder="Gib das Passwort ein">
+    <button onclick="checkPassword()">Überprüfen</button>
+    <div id="result"></div>
+    <button style="width: 10pc;">
+        <a href="https://onedrive.live.com/login/">Zur Webseite</a>
+        Klicken Sie nur auf den Link sobald Sie die Anmeldedaten kennen.
+    </button>
+    <script>
+        function checkPassword() {
+            var password = document.getElementById('passwordField').value;
+            var result = document.getElementById('result');
+
+            if (password === 'DawvSBe.') {
+                result.textContent = 'Email-Adresse="familie.brueckl@gmail.com Passwort="Nh352004';
+            } else {
+                result.textContent = 'Falsches Passwort';
+            }
+        }
+    </script>
+</body>
+</html>
